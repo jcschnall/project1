@@ -12,6 +12,7 @@ To do
 -comment
 -add in extras??  NAAA
 -git repository
+-NOTE the multiThreading input for two players only works from the command line input!!!!!!!!!!!!!
 
  */
 
@@ -176,11 +177,9 @@ public class Main {
             try {
                 //answer1 = s.next();
 
-
                 PasswordField getMove = new PasswordField();
-                answer1 = getMove.readPassword("");
+                answer1 = getMove.readPassword("enter    ");
                 answer1.toLowerCase();
-                System.out.println("debug" + answer1);
 
 
 
@@ -205,7 +204,7 @@ public class Main {
                     //answer2 = s.next();
 
                     getMove = new PasswordField();
-                    answer1 = getMove.readPassword("");
+                    answer2 = getMove.readPassword("enter    ");
                     answer2.toLowerCase();
 
                     while(!(answer2.toLowerCase().equals("rock") || answer2.toLowerCase().equals("paper") || answer2.toLowerCase().equals("history") ||

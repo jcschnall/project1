@@ -4,6 +4,7 @@ package com.company;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class PasswordField {
 
@@ -17,7 +18,7 @@ public class PasswordField {
 
 
         try {
-            mask.sleep(3000);
+            mask.sleep(300);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -27,14 +28,17 @@ public class PasswordField {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         String password = "";
 
+
         try {
             password = in.readLine();
+            //System.out.println("debug " + password);
         } catch (IOException ioe) {
             ioe.printStackTrace();
         }
         // stop masking
         et.stopMasking();
         // return the password entered by the user
+
         return password;
     }
 }
