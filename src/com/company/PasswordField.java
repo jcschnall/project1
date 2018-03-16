@@ -6,6 +6,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
+
+//class for password masking for two player game
+//
+
 public class PasswordField {
 
     /**

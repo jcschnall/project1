@@ -2,6 +2,9 @@ package com.company;
 
 import java.io.*;
 
+//class for password masking for two player game
+//
+
 class EraserThread implements Runnable {
     private boolean stop;
 

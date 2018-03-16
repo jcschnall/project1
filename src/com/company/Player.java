@@ -1,17 +1,17 @@
 package com.company;
 
 /*
-Use Classes to remove repetitive parts of code and abstract out a “Player” class used to manage the state of the
-        player (if they have won or loss), how many points they have, what move they have made
+ “Player” class used to manage the state of the
+ player (if they have won or loss), how many points they have, what move they have made
 */
 
 public class Player {
 
-    private boolean isHuman;
-    private int oneOrTwo;
-    private String wOrL;
-    private int points;
-    private String move;
+    private boolean isHuman; //is it a human or computer player
+    private int oneOrTwo; //is it player one or two
+    private String wOrL; //win or loss record
+    private int points; //number of points
+    private String move; //what was last or current move
 
     public Player(boolean isHuman, int oneOrTwo) {
         this.isHuman = isHuman;
@@ -20,6 +20,9 @@ public class Player {
         this.points = 0;
         this.move = "";
     }
+
+    //below are simple getters and setters for above
+    //
 
     public boolean isHuman() {
         return isHuman;
